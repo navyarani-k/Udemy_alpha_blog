@@ -1,4 +1,7 @@
 <h1 class="text-center mt-4">Alpha bloggers</h1>
+<div class="apple_pagination ">
+  <%= will_paginate @users, :container => false %>
+</div>
 <div class = "container">
   <h2 class= "text-center mt-4"> Users  </h2>
   <div class = "container">
@@ -13,7 +16,9 @@
               <h5 class="card-title "><%= link_to gravatar_for(user, size: 100), user %></h5>
               <div class="card-text text-left"><%= pluralize(user.articles.count, "article") %></div>
               <%= link_to "View Profile", user , class: "btn btn btn-success" %>
-              <%= link_to "Edit Profile", edit_user_path(user), class: "btn btn btn-info" %>
+              <% if logged_in? && user == current_user %>
+                <%= link_to "Edit Profile", edit_user_path(user), class: "btn btn btn-info" %>
+               <% end %>
               <%#= link_to "Delete",article_path(article), class: "btn btn btn-danger", method: :delete, data: {confirm: "Are you sure? "} %>            
             </div>
             <div class="card-footer text-muted">
