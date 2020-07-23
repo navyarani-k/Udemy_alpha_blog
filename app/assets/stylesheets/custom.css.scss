@@ -2,14 +2,19 @@
 
 .navbar {
   background-color: black !important;
+  /*position: fixed;*/
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: rgb(255,102,203);
+  border-color: #dce3e6;
+  
 } 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+  }
 
 .nav-link {
   color: white !important;
@@ -28,11 +33,17 @@
 	margin-top: 25px;
 }
 .jumbotron {
+/*background-color: #ffcccc;*/
 background-image: asset-url('headphones.jpeg');
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
-height: 650px;
+height: 760px;
+position: absolute;
+margin-top: 60px;
+width: 100%;
+margin-bottom: 30px;
+opacity: 1;
 }
 
 html,
@@ -47,6 +58,9 @@ body {
 
 #sticky-footer {
 	flex-shrink: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .apple_pagination {
   background: #f1f1f1;
@@ -75,3 +89,13 @@ body {
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
+.alert-notice{
+color: #3c763d;
+background-color: aqua;
+border-color: #d6e9c6;
+}
+.alert-alert{
+color: #3c763d;
+background-color: blue;
+border-color: #d6e9c6;
+}
