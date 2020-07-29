@@ -17,9 +17,14 @@
   }
 
 .nav-link {
-  color: white !important;
-  
+  color: white !important; 
 }
+.nav-item {
+  font-style: oblique;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -29,9 +34,9 @@
   font-weight: bold;
 }
 
-#home-container {
+/*#home-container {
 	margin-top: 25px;
-}
+} */
 .jumbotron {
 /*background-color: #ffcccc;*/
 background-image: asset-url('headphones.jpeg');
@@ -39,16 +44,16 @@ background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
 height: 760px;
-position: absolute;
-margin-top: 60px;
+margin-top: 10px;
 width: 100%;
-margin-bottom: 30px;
+margin-bottom: 10px;
 opacity: 1;
 }
 
 html,
 body {
 	height: 100%;
+  background-color: #04252538;
 }
 
 #page-content {
@@ -98,4 +103,7 @@ border-color: #d6e9c6;
 color: #3c763d;
 background-color: blue;
 border-color: #d6e9c6;
+}
+.page-bgcolor {
+  background-image: url('clock.jpg');
 }
